@@ -31,7 +31,7 @@ const MonacoCodeEditor = () => {
     setOutput("Running...");
 
     try {
-      const response = await axios.post("http://localhost:5000/run", {
+      const response = await axios.post("https://rohini-backend-1bst.onrender.com/run", {
         code,
         language: selectedQuestion.language,
       });
